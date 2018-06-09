@@ -1,0 +1,34 @@
+#root, .header {
+  width: 100%; }
+  #root .wrapper, .header .wrapper {
+    width: 1200px;
+    margin: 0 auto; }
+    #root .wrapper img, .header .wrapper img {
+      width: 100%;
+      height: 93px;
+      border: 0;
+      vertical-align: bottom; }
+
+.header {
+  background: #f1f1f1;
+  height: 30px;
+  line-height: 30px; }
+  .header .header-l {
+    font-size: 12px;
+    width: 234px;
+    float: left; }
+    .header .header-l a {
+      color: #0a75e7;
+      padding: 0 3px;
+      text-decoration: none;
+      margin: 0 5px; }
+      .header .header-l a:hover {
+        text-decoration: underline; }
+  .header .header-r {
+    font-size: 12px;
+    float: right;
+    height: 30px; }
+    .header .header-r li {
+      float: left;
+      padding: 0px 8px;
+      position: relative; }
