@@ -17,63 +17,37 @@
 				<p><img src="../img/autoSlogo.gif"/></p>		
 			</div>
 			<div class="heider-list-2 left">欢迎注册</div>
-			<p class="heider-list-3 right">已有账号,<a href="">立即登录></a></p>
+			<p class="heider-list-3 right">已有账号,<a href="http://localhost/xiangmu123/xiangmu1/src/html/login.html">立即登录></a></p>
 		</div>
 		<div class="border"></div>
 		<div class="main">
 			<h3>欢迎注册康爱多账号</h3>
-			<div id="form">
-				<div class="wrap">
-					<div class="Cinput">
-						<p>手&nbsp;机&nbsp;号&nbsp;码</p>
-						<input type="tel" placeholder="请输入手机号码"/>
-					</div>							
-				</div>
-				<div class="wrap">
-					<div class="Cinput">
-						<p>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</p>
-						<input type="tel" placeholder="请输入您的密码"/>
-						<p id="show">
-							<i></i>
-						</p>
-					</div>
-				</div>
-				<div class="wrap">
-					<div class="code">
-						<p class="code-font">图&nbsp;形&nbsp;验&nbsp;证&nbsp;码</p>
-						<input type="text" placeholder="请输入条形验证码"/>
-					</div>
-					<div class="pic">
-						<a href=""><img src="../img/GetValidateCode.jpg"/></a>
-					</div>
-				</div>
-				<div class="wrap">
-					<div class="code">
-						<p class="code-font">短&nbsp;信&nbsp;验&nbsp;证&nbsp;码</p>
-						<input type="text" placeholder="请输入短信验证码"/>			
-					</div>
-					<div class="pic" style="background: #b5b5b5;"><a href="" style="font-size: 14px;color: #FFFFFF;height: 48px;line-height: 48px;padding: 0 14px;font-family: '宋体';">点击获取短信验证码</a></div>
-				</div>
-				<p class="size">
-					<input type="checkbox" name="" id="" value="" />
-					<span>我已阅读并同意<a href="">《康爱多网上药店服务协议》</a>及<a href="">隐私声明</a></span>
-				</p>
-				<a href="" class="onne">立即注册</a>
-				<div class="type">
-					<div class="type-top">
-						<p class="type-name">使用合作网站账号登录康爱多</p>
-						<p class="type-line"></p>						
-					</div>
-					<ul class="type-foot">
-						<li class="li1"><a href="" title="微信登录"></a></li>
-						<li class="li2"><a href="" title="qq登录"></a></li>
-						<li class="li3"><a href="" title="淘宝登录"></a></li>
-						<li class="li4"><a href="" title="支付宝登录"></a></li>
-						<li class="li5"><a href="" title="新浪微博登录"></a></li>
-						<li class="li6"><a href="" title="健保通(医卡通)登录"></a></li>
-					</ul>
-				</div>
-			</div>
+			<form id="form" method="post" action="../../php/reg.php">
+				<p>
+                <label for="username">请输入号码&nbsp;&nbsp;&nbsp;:</label>
+                <input type="text" name="username" id="username" />
+                <span>(必填，请输入号码)</span>
+            </p>
+            <p>
+                <label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码 ：</label>
+                <input type="password" name="password" id="password" />
+                <span>(必填，不得少于6位)</span>
+            </p>
+            <p>
+                <label for="repass">密&nbsp;码&nbsp;重&nbsp;复：</label>
+                <input type="password" name="repass" id="repass" />
+                <span>(必填，请再次输入密码)</span>
+            </p>
+            <p>
+                <label for="email">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>
+                <input type="text" name="email" id="email" />
+                <span>(必填)</span>
+            </p>
+            <p>
+                <input type="submit" value="注册" name="submit" id="sub_zc"/>
+                <!--submit：跳转-->
+            </p>
+			</form>
 		</div>
 		<div class="footer">
 		<div class="footer_cont">
@@ -104,5 +78,7 @@
 			<p class="footer_end">©2010-2016 广东<a href="">康爱多网上药店</a>版权所有，并保留所有权利</p>
 		</div>
 	</div>
+	<script type="text/javascript" src="../script/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../script/js/zhengzhe.js"></script>
 	</body>
 </html>

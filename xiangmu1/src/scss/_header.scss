@@ -396,6 +396,27 @@ textarea{resize:none;}
            .middleside-s{
                position:relative;
                height: 400px;
+               .lr{
+                   .click_1{
+                        position: absolute;
+                        top: 146px;
+                        left: 0;
+                        width: 40px;
+                        height: 80px;
+                        background: url(../../dist/img/lunboBtn_allbgs.png);
+                   }
+                   .click_2{
+                           position: absolute;
+                            top: 146px;
+                            right: 0;
+                            left: auto;
+                            width: 40px;
+                            height: 80px;
+                            text-align: right;
+                            background: url(../../dist/img/lunboBtn_allbgs.png);
+                            background-position: -80px 0;
+                   }
+               }
            } 
         }
     }
@@ -437,6 +458,7 @@ textarea{resize:none;}
         opacity: 1;
     }
 }
+
 .rightside{
     position: absolute;
     z-index: 5;
@@ -455,6 +477,11 @@ textarea{resize:none;}
             float: left;
             padding-left: 17px;
             text-align: center;
+            .zheng-1{
+                padding-top: 6px;
+                font-size: 12px;
+                color: #131313;
+            }
         }
     }
     .yz{
@@ -600,6 +627,7 @@ textarea{resize:none;}
                   padding: 15px 0px 0 20px;
                   text-align: left;
             }
+            
         }
     }
 }
@@ -810,16 +838,30 @@ textarea{resize:none;}
 .switchB-1{
     ul{
         height: 491px;
-        width: 3000px;
+        width: 380px;
         position: absolute;
         left: 0;
         top: 0;
         z-index: 2;
+        overflow: hidden;
         li{
+            position: absolute;
             float: left;
             height: 491px;
             width: 380px;
+            display: inline-block; 
+            overflow: hidden;
+            a{
+                position: absolute;
+                img{
+                    height: 491px;
+                width: 380px;
+                    position: absolute;
+                    
+                }
+            } 
         }
+        
     }
 }
 .contextN{
@@ -884,6 +926,117 @@ textarea{resize:none;}
                 width: 170px;
                 height: 99px;
             }
+        }
+    }
+}
+.fixed{
+    position: fixed;
+    right: -264px;
+    top: 0;
+    z-index: 999;
+    width: 300px;
+    height: 100%;
+    background: #ebebeb;
+    .navi_left{
+        padding-top: 150px;
+        background: #0066D4;
+        position: relative;
+        float: left;
+        width: 36px;
+        height: 100%;
+        .nav-close{
+            display: inline;
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            width: 15px;
+            height: 16px;
+            background: url(../img/close_btn024.png) no-repeat;
+            cursor: pointer;    
+        }
+        .kefu{
+            background-color: rgb(1, 85, 175);
+            background: url(../img/right_fixedbg.png) no-repeat;
+            background-position: 0 2px;
+            height: 32px;
+            margin-top: 0;
+        }
+        .cart_box{
+            position: relative;
+            width: 36px;
+            background-color: rgb(1, 85, 175);
+            height: 155px;
+            margin-top: 16px;
+            background: url(../img/right_fixedbg.png) no-repeat;
+            background-position: 0 -52px;
+            .single{
+                background: url(../img/right_radius_icon.png) no-repeat;
+                width: 23px;
+                height: 23px;
+                line-height: 23px;
+                top: 30px;
+                padding-right: 2px;
+                text-align: center;
+                color: #0066d4;
+                right: 7px;
+            }
+            .kad{
+                color: #0066d4;
+                right: 7px;
+                bottom: 22px;
+                width: 23px;
+                height: 20px;
+                line-height: 20px;
+                display: block;
+                position: absolute;
+                text-align: center;
+            }
+        }
+        .my-Info{
+            background-position: 0 -226px;
+            margin-top: 16px;
+            background: url(../img/right_fixedbg.png) no-repeat;
+            position: relative;
+            width:36px ;
+            height: 32px;
+            text-align: center;
+        }
+        .love{
+                margin-top: 16px;
+                background: url(../img/right_fixedbg.png) no-repeat;
+                position: relative;
+                width: 36px;
+                height: 32px;
+                text-align: center;
+                background-position: 0 -274px;
+        }
+        .timer{
+                margin-top: 16px;
+                background: url(../img/right_fixedbg.png) no-repeat;
+                position: relative;
+                width: 36px;
+                height: 32px;
+                text-align: center;
+                background-position: 0 -329px;
+        }
+        .car{
+                margin-top: 16px;
+                background: url(../img/right_fixedbg.png) no-repeat;
+                position: relative;
+                width: 36px;
+                height: 32px;
+                text-align: center;
+                background-position: 0 -382px;
+        }
+        .fanhui{
+            margin-top: 16px;
+            position: relative;
+            width: 54px;
+            height:54px;
+            text-align: center;
+            background: url(../img/fanhui2.png) no-repeat;
+            background-position: 0 -54px;
+            
         }
     }
 }

@@ -407,6 +407,23 @@ textarea {
     .mainbody .itmes_wrap .middleside .middleside-s {
       position: relative;
       height: 400px; }
+      .mainbody .itmes_wrap .middleside .middleside-s .lr .click_1 {
+        position: absolute;
+        top: 146px;
+        left: 0;
+        width: 40px;
+        height: 80px;
+        background: url(../../dist/img/lunboBtn_allbgs.png); }
+      .mainbody .itmes_wrap .middleside .middleside-s .lr .click_2 {
+        position: absolute;
+        top: 146px;
+        right: 0;
+        left: auto;
+        width: 40px;
+        height: 80px;
+        text-align: right;
+        background: url(../../dist/img/lunboBtn_allbgs.png);
+        background-position: -80px 0; }
 
 .pic a {
   width: 810px;
@@ -459,6 +476,10 @@ textarea {
       float: left;
       padding-left: 17px;
       text-align: center; }
+      .rightside .msg li .zheng-1 {
+        padding-top: 6px;
+        font-size: 12px;
+        color: #131313; }
   .rightside .yz {
     border-bottom: 1px solid #efefef;
     border-top: 1px solid #efefef;
@@ -778,15 +799,25 @@ textarea {
 
 .switchB-1 ul {
   height: 491px;
-  width: 3000px;
+  width: 380px;
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 2; }
+  z-index: 2;
+  overflow: hidden; }
   .switchB-1 ul li {
+    position: absolute;
     float: left;
     height: 491px;
-    width: 380px; }
+    width: 380px;
+    display: inline-block;
+    overflow: hidden; }
+    .switchB-1 ul li a {
+      position: absolute; }
+      .switchB-1 ul li a img {
+        height: 491px;
+        width: 380px;
+        position: absolute; }
 
 .contextN {
   float: left;
@@ -846,3 +877,102 @@ textarea {
       .Brand ul li img {
         width: 170px;
         height: 99px; }
+
+.fixed {
+  position: fixed;
+  right: -264px;
+  top: 0;
+  z-index: 999;
+  width: 300px;
+  height: 100%;
+  background: #ebebeb; }
+  .fixed .navi_left {
+    padding-top: 150px;
+    background: #0066D4;
+    position: relative;
+    float: left;
+    width: 36px;
+    height: 100%; }
+    .fixed .navi_left .nav-close {
+      display: inline;
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      width: 15px;
+      height: 16px;
+      background: url(../img/close_btn024.png) no-repeat;
+      cursor: pointer; }
+    .fixed .navi_left .kefu {
+      background-color: #0155af;
+      background: url(../img/right_fixedbg.png) no-repeat;
+      background-position: 0 2px;
+      height: 32px;
+      margin-top: 0; }
+    .fixed .navi_left .cart_box {
+      position: relative;
+      width: 36px;
+      background-color: #0155af;
+      height: 155px;
+      margin-top: 16px;
+      background: url(../img/right_fixedbg.png) no-repeat;
+      background-position: 0 -52px; }
+      .fixed .navi_left .cart_box .single {
+        background: url(../img/right_radius_icon.png) no-repeat;
+        width: 23px;
+        height: 23px;
+        line-height: 23px;
+        top: 30px;
+        padding-right: 2px;
+        text-align: center;
+        color: #0066d4;
+        right: 7px; }
+      .fixed .navi_left .cart_box .kad {
+        color: #0066d4;
+        right: 7px;
+        bottom: 22px;
+        width: 23px;
+        height: 20px;
+        line-height: 20px;
+        display: block;
+        position: absolute;
+        text-align: center; }
+    .fixed .navi_left .my-Info {
+      background-position: 0 -226px;
+      margin-top: 16px;
+      background: url(../img/right_fixedbg.png) no-repeat;
+      position: relative;
+      width: 36px;
+      height: 32px;
+      text-align: center; }
+    .fixed .navi_left .love {
+      margin-top: 16px;
+      background: url(../img/right_fixedbg.png) no-repeat;
+      position: relative;
+      width: 36px;
+      height: 32px;
+      text-align: center;
+      background-position: 0 -274px; }
+    .fixed .navi_left .timer {
+      margin-top: 16px;
+      background: url(../img/right_fixedbg.png) no-repeat;
+      position: relative;
+      width: 36px;
+      height: 32px;
+      text-align: center;
+      background-position: 0 -329px; }
+    .fixed .navi_left .car {
+      margin-top: 16px;
+      background: url(../img/right_fixedbg.png) no-repeat;
+      position: relative;
+      width: 36px;
+      height: 32px;
+      text-align: center;
+      background-position: 0 -382px; }
+    .fixed .navi_left .fanhui {
+      margin-top: 16px;
+      position: relative;
+      width: 54px;
+      height: 54px;
+      text-align: center;
+      background: url(../img/fanhui2.png) no-repeat;
+      background-position: 0 -54px; }
